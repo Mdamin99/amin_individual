@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root {
+    --color1: #073763;
+    --color2: #3d85c6;
+    --color3: #cfe2f3;
+    --color4: #f3f6f4;
+    --color5: #eeeeee;
+    --user-button-circle: rgba(0,0,0,0.025);
+    --user-button-cardborder: rgba(255,255,255,0.25);
+    --user-button-text:#323133;
+    --user-button-shadow:rgba(0,0,0,0.1);
+}
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color3);
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Poppins', sans-serif;
+}
+
+.logo{
+	width: 25%;
+	float: left;
+}
+
+.logo img {
+	padding-top: 20px; 
+	padding-left: 60px;
+}
+
+.menu{
+	width: 75%;
+	float: left;
+}
+
+.navbar ul{
+	padding-top: 37px;
+	padding-right: 10px;
+	text-align: right;
+}
+
+.navbar ul li{
+	list-style: none;
+	display: inline;
+	padding: 15px;
+}
+
+.menu ul li a{
+	color: var(--color1);
+	text-decoration: none;
+	font-size: 20px;
+	transition: 0.8s;
+	padding: 2% 2%;
+}
+
+.menu a:hover{
+	background: var(--color4);
+	color: var(--color2);
+    border-radius: 15px;
+}
+
+
+.navbar {
+	height: 104px;
+	width: 100%;
+	display: inline-block;
+	box-sizing: border-box;
+    background-color: var(--color3);
+}
+
+.title{
+    background-repeat: no-repeat;
+    background-size: cover;
+	height: 70vh;
+	text-align: center;
+    width: 100%;
+}
+
+.title h1{
+	color: magenta;
+	font-size: 4em;
+	padding-top: 24vh;
+}
+
+.title h3{
+	color: aquamarine;
+	padding-top: 10px;
+	font-size: 2em;
+}
+
+.arrow {
+    text-align: center;
+    padding: 50px;
+}
+
+.bio {
+	width: 100%;
+	padding: 50px 0px 250px 0px;
+	height: 70vh;
+}
+
+.aminPic {
+	width: 40%;
+	float: left;
+}
+
+.aminPic img {
+	padding: 0px 50px 50px 150px;
+}
+
+.namebio {
+	width: 60%;
+	float: left;
+}
+
+.namebio h1 {
+	font-size: 4em;
+	margin-top: 20%;
+}
+
+.namebio h3 {
+	color: coral;
+}
+
+.tablebio {
+    width: 100%;
+    float: left;
+}
+
+.tablebio table{
+    margin: 3% auto;
+}
+
+.tablebio table, .tablebio th, .tablebio td{
+    border: 1px solid white;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tablebio tr{
+    height: 40px;
+}
+
+.biofull {
+	width: 100%;
+	float: left;
+	padding: 0px 150px 150px 10%;
+    text-align: justify;
+    line-height: 2.5;
+}
+
+.edu {
+    border: 2px solid var(--color1);
+    border-radius: 25px;
+    margin: 120px;
+}
+
+.edumerbok2 h1 {
+    font-size: 3em;
+    color: var(--color1);
+    margin: 2% 0; 
+    border-left: 2px solid var(--color2);
+    padding-left: 20px;
+}
+
+.edumerbok1 video {
+    padding-left: 50px;
+}
+
+.edumerbok1, .edumerbok2{
+    width: 50%;
+    float: left;
+    padding: 4% 3%;
+    height: 60vh;
+}
+
+.edumerbok3 {
+    width: 100%;
+}
+
+.edumerbok3 h3{
+    text-align: justify;
+    line-height: 2.5;
+    margin: 0 6%;
+    padding-bottom: 4%;
+}
+
+.eduschool1 h1 {
+    font-size: 3em;
+    color: var(--color1);
+    margin: 2% 0; 
+    text-align: right;
+    border-right: 2px solid var(--color2);
+    padding-right: 20px;
+}
+
+.eduschool2 img {
+    padding-right: 50px;
+}
+
+.eduschool1, .eduschool2{
+    width: 50%;
+    float: left;
+    padding: 4% 3%;
+    height: 60vh;
+}
+
+.eduschool3 {
+    width: 100%;
+}
+
+.eduschool3 h3{
+    text-align: justify;
+    line-height: 2.5;
+    margin: 0 6%;
+    padding-bottom: 4%;
+}
+
+.gallery {
+  height: 200vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--colour1);
+  overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper > * {
+  margin: 5px;
+}
+
+.media {
+    width: 450px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.media img {
+    max-width: 800px;
+    height: auto;
+}
+
+.layer {
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 90%;
+  background: #FFF;
+  color: #151E3F;
+  transition: all 0.9s ease;
+}
+.layer p {
+  transition: all 0.9s ease;
+  transform: scale(0.1);
+}
+
+.gallery p {
+  font-family: "Inconsolata", monospace;
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.media:hover .layer {
+  opacity: 0.8;
+  width: 90%;
+  transition: all 0.5s ease;
+}
+.media:hover .layer p {
+  transform: scale(1);
+  transition: all 0.9s ease;
+}
+
+@media (max-width: 800px) {
+  body {
+    transform: scale(0.6);
+  }
+}
+@media (max-width: 600px) {
+  .wrapper {
+    display: block;
+  }
+  .wrapper > * {
+    margin: 10px;
+  }
+}
+
+.exp {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2),rgba(255, 255, 255, 0.2)),url(Picture/underwater.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.topexp {
+    position: fixed;
+}
+
+#buttonexp2 {
+    position: absolute;
+    left: 35px;
+}
+
+.topexp button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    margin: 20px;
+}
+
+.conexp {
+    padding: 3% 0 3% 0;
+}
+
+.contentexp {
+    width: 59%;
+    float: left;
+    margin: 1% 2% 0 5%;
+    padding: 80px 100px;
+    text-align: justify;
+    line-height: 2.5;
+    border-radius: 25px;
+    background: linear-gradient(rgba(255, 255, 255, 0.3),rgba(255, 255, 255, 0.3));
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.contentexp h3{
+    color: black;
+}
+
+.contentexp h1{
+    color: black;
+}
+
+.sidecontentexp {
+    width: 29%;
+    float: left;
+    margin: 1% 5% 0 0;
+    padding: 50px 75px;
+    text-align: justify;
+    border-radius: 25px;
+    background: linear-gradient(rgba(255, 255, 255, 0.3),rgba(255, 255, 255, 0.3));
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fam{
+    margin-left: 150px;
+}
+
+.fam h1 {
+    color: var(--color4);
+}
+
+.fam h3 {
+    color: var(--color4);
+}
+.fam1 {
+    margin: 8% 0 0 11%;
+    padding: 2%;
+    width: 35%;
+    height: 800px;
+    float: left;
+    background-color: var(--color1);
+    border-radius: 10% 0 0 0;
+}
+
+.fam2 {
+    margin: 8% 11% 0 0;
+    padding: 2%;
+    width: 35%;
+    height: 800px;
+    float: left;
+    background-color: var(--color2);    
+    border-radius: 0 10% 0 0%;
+}
+
+.fam3 {
+    margin: 0 0 8% 11%;
+    padding: 2%;
+    width: 35%;
+    height: 800px;
+    float: left;
+    background-color: var(--color2);
+    border-radius: 0 0 0 10%;
+}
+
+.fam4 {
+    margin: 0 11% 8% 0;
+    padding: 2%;
+    width: 35%;
+    height: 800px;
+    background-color: var(--color1);
+    float: left;
+    border-radius: 0 0 10% 0;
+}
